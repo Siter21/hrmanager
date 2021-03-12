@@ -4,7 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/hr-generator/hr-generator.iml" filepath="$PROJECT_DIR$/hr-generator/hr-generator.iml" />
       <module fileurl="file://$PROJECT_DIR$/hr-server/hr-server.iml" filepath="$PROJECT_DIR$/hr-server/hr-server.iml" />
-      <module fileurl="file://$PROJECT_DIR$/hrmanage.iml" filepath="$PROJECT_DIR$/hrmanage.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/hrmanage.iml" filepath="$PROJECT_DIR$/.idea/hrmanage.iml" />
     </modules>
   </component>
 </project>
