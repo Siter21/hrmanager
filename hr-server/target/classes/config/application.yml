@@ -8,7 +8,6 @@ spring:
     username: root
     password: 2028
     hikari:
-      #      连接池名
       pool-name: DateHikariCP
       mininum-idle: 5
       idle-timeout: 188888
@@ -17,9 +16,22 @@ spring:
       max-lifetime: 1800000
       connection-timeout: 30000
       connection-test-query: SELECT 1
+  redis:
+    timeout: 10000ms
+    host: 127.0.0.1
+    database: 0
+    port: 6379
+    password: redispass
+    lettuce:
+      pool:
+        max-active: 1024
+        max-wait: 1000ms
+        max-idle: 200
+        min-idle: 5
+
 
 mybatis-plus:
-  mapper-locations: classpath*/mapper/*Mapper.xml
+  mapper-locations: classpath:/mapper/*Mapper.xml
   type-aliases-package: com.chen.server.pojo
   configuration:
     # 是否开启自动驼峰命名规则（camel case）映射，即从经典数据库列名 A_COLUMN（下划线命名） 到经典 Java 属性名 aColumn（驼峰命名） 的类似映射
