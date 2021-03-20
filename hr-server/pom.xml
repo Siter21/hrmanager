@@ -80,6 +80,13 @@
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-pool2</artifactId>
         </dependency>
+        <!-- EasyPoi -->
+        <dependency>
+            <groupId>cn.afterturn</groupId>
+            <artifactId>easypoi-spring-boot-starter</artifactId>
+            <version>4.3.0</version>
+        </dependency>
+
 
         <!--jdk1.8以上需要这个依赖-->
 <!--        <dependency>-->

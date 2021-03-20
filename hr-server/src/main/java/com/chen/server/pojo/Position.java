@@ -1,5 +1,6 @@
 package com.chen.server.pojo;
 
+import cn.afterturn.easypoi.excel.annotation.Excel;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
@@ -11,7 +12,11 @@ import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import lombok.experimental.Accessors;
+
+import javax.validation.constraints.NotNull;
 
 /**
  * <p>
@@ -22,7 +27,9 @@ import lombok.experimental.Accessors;
  * @since 2021-02-10
  */
 @Data
-@EqualsAndHashCode(callSuper = false)
+@NoArgsConstructor
+//@RequiredArgsConstructor
+@EqualsAndHashCode(callSuper = false,of = "name")
 @Accessors(chain = true)
 @TableName("t_position")
 @ApiModel(value="Position对象", description="")
@@ -35,6 +42,8 @@ public class Position implements Serializable {
     private Integer id;
 
     @ApiModelProperty(value = "职位")
+    @Excel(name = "职位",width = 15)
+    @NotNull
     private String name;
 
     @ApiModelProperty(value = "创建时间")
@@ -44,5 +53,7 @@ public class Position implements Serializable {
     @ApiModelProperty(value = "是否启用")
     private Boolean enabled;
 
-
+    public Position(@NotNull String name) {
+        this.name = name;
+    }
 }
