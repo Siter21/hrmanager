@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/hr-generator/hr-generator.iml" filepath="$PROJECT_DIR$/hr-generator/hr-generator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hr-mail/hr-mail.iml" filepath="$PROJECT_DIR$/hr-mail/hr-mail.iml" />
       <module fileurl="file://$PROJECT_DIR$/hr-server/hr-server.iml" filepath="$PROJECT_DIR$/hr-server/hr-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/hrmanage.iml" filepath="$PROJECT_DIR$/.idea/hrmanage.iml" />
     </modules>

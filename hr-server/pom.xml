@@ -86,8 +86,11 @@
             <artifactId>easypoi-spring-boot-starter</artifactId>
             <version>4.3.0</version>
         </dependency>
-
-
+        <!-- rabbitmq 消息队列 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-amqp</artifactId>
+        </dependency>
         <!--jdk1.8以上需要这个依赖-->
 <!--        <dependency>-->
 <!--            <groupId>javax.xml.bind</groupId>-->

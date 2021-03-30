@@ -5,6 +5,7 @@
     <modules>
         <module>hr-server</module>
         <module>hr-generator</module>
+        <module>hr-mail</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

@@ -3,6 +3,7 @@ package com.chen.server;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.SpringApplication;
+import org.springframework.scheduling.annotation.EnableScheduling;
 
 /**
  * @author Siter21
@@ -11,6 +12,7 @@ import org.springframework.boot.SpringApplication;
  */
 @SpringBootApplication
 @MapperScan("com.chen.server.mapper")
+@EnableScheduling
 public class HrApplication {
 
     public static void main(String[] args) {
